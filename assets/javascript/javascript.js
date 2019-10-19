@@ -17,6 +17,10 @@ function searchTerm() {
         method: "GET"
     }).then(function (response) {
         console.log(response);
+        for (let i = 0; i < response.response.docs.length; i++) {
+            console.log(response.doc[i].headline.main);
+        }
+
     })
 
 }
