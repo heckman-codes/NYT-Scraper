@@ -1,16 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>NYT Scraper</title>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 alert-info">
+            <h1 class="display-4">
+              <i class="far fa-newspaper"></i>  NY Times Search
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="container">
+          <div class="alert alert-secondary" role="alert">
+ <i class="far fa-newspaper"></i>  Search Parameters
+</div>
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Search Term</label>
+            <input
+              type="text"
+              class="form-control search-term"
+
+              id="formGroupExampleInput"
+              placeholder="Type here, folks."
+            />
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2"
+              >Numbers of Records to Retrieve</label
+            >
+            <input
+              type="text"
+              class="form-control records"
+              id="formGroupExampleInput2"
+              placeholder=" "
+            />
+          </div>
+        </form>
+        <button type="button" class="btn btn-outline-info"><i class="fas fa-th"></i>  Search</button>
+        <button type="button" class="btn btn-outline-info"><i class="fas fa-trash-alt"></i>  Clear Results</button>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="col-12">
+      <div class="container">
+          <div class="alert alert-secondary" role="alert">
+ <i class="fas fa-th"></i></i>  Top Articles
+</div>
+<div id="top-articles"></div>
+</div>
+</div>
+
+
+
+    <script
+      src="https://kit.fontawesome.com/4d58f93612.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="/assets/javascript/javascript.js"></script>
-</body>
-
+  </body>
 </html>
