@@ -9,16 +9,12 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <title>NYT Scraper</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <div class="row">
@@ -28,53 +24,42 @@
             </h1>
           </div>
         </div>
-      </div>
     </div>
 
     <div class="col-12">
-      <div class="container">
-          <div class="alert alert-secondary" role="alert">
- <i class="far fa-newspaper"></i>  Search Parameters
-</div>
-        <form>
-          <div class="form-group">
-            <label for="formGroupExampleInput">Search Term</label>
-            <input
-              type="text"
-              class="form-control search-term"
-
-              id="formGroupExampleInput"
-              placeholder="Type here, folks."
-            />
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput2"
-              >Numbers of Records to Retrieve</label
-            >
-            <input
-              type="text"
-              class="form-control records"
-              id="formGroupExampleInput2"
-              placeholder=" "
-            />
-          </div>
-        </form>
-        <button type="button" class="btn btn-outline-info"><i class="fas fa-th"></i>  Search</button>
-        <button type="button" class="btn btn-outline-info"><i class="fas fa-trash-alt"></i>  Clear Results</button>
+        <div class="container">
+            <div class="alert alert-secondary" role="alert">
+                <i class="far fa-newspaper"></i> Search Parameters
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Search Term</label>
+                    <input type="text" class="form-control search-term" id="formGroupExampleInput"
+                        placeholder="Type here, folks." />
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Numbers of Records to Retrieve</label>
+                    <input type="text" class="form-control records" id="formGroupExampleInput2" placeholder=" " />
+                </div>
+            </form>
+            <button type="button" class="btn btn-outline-info" id="search-button"><i class="fas fa-th"></i>
+                Search</button>
+            <button type="button" class="btn btn-outline-info"><i class="fas fa-trash-alt"></i> Clear Results</button>
         </div>
-      </div>
+    </div>
     </div>
 
     <br>
 
     <div class="col-12">
-      <div class="container">
-          <div class="alert alert-secondary" role="alert">
- <i class="fas fa-th"></i></i>  Top Articles
-</div>
-<div id="top-articles"></div>
-</div>
-</div>
+        <div class="container">
+            <div class="alert alert-secondary" role="alert">
+                <i class="fas fa-th"></i></i> Top Articles
+            </div>
+            <div id="top-articles"></div>
+        </div>
+    </div>
+
 
 <div class="card">
     <div class="card-body text-center">
@@ -82,10 +67,8 @@
     </div>
 </div>
 
-    <script
-      src="https://kit.fontawesome.com/4d58f93612.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/assets/javascript/javascript.js"></script>
-  </body>
+    <script src="https://kit.fontawesome.com/4d58f93612.js" crossorigin="anonymous"></script>
+    <script src="assets/javascript/javascript.js"></script>
+</body>
+
 </html>
